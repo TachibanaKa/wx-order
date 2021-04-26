@@ -1,0 +1,17 @@
+<view class="cart">
+  <view class="tip" wx:if="{{goodsAll.length==0}}">购物车暂时是空的</view>
+  <view class="main">
+    <view class="item" wx:for="{{goodsAll}}" wx:key="id" wx:if="{{item.bugNum}}">
+        <view class="info">
+          <image src="{{item.pic}}"></image>
+          <text>{{item.name}} \n ¥{{item.minPrice}}</text>
+        </view>
+        <view class="num">
+          <text class="num-change" data-mode='+' data-item='{{item}}' bindtap="changeNum">+</text>
+          <text>{{item.bugNum}}</text>
+          <text class="num-change" data-mode='-' data-item='{{item}}' bindtap="changeNum">-</text>
+        </view>
+    </view>
+  </view>
+  <view class="price">共计：<text>¥ {{priceAll}} 元 </text></view>
+</view>

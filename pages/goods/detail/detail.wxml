@@ -1,0 +1,14 @@
+<view class="detail">
+  <view class="info">
+    <image src="{{goods.pic}}"></image>
+    <text>{{goods.name}}</text>
+  </view>
+  <view class="num">
+    <view class="price">¥ {{goods.minPrice}}</view>
+    <text class="num-change" data-mode="+" bindtap="changeNum">+</text>
+    <text>{{goods.bugNum?goods.bugNum:0}}</text>
+    <text class="num-change last" data-mode="-" bindtap="changeNum">-</text>
+  </view>
+  <van-button bindtap="addGoods">加入购物车</van-button>
+  <van-button type="primary" bindtap="toCart">查看购物车</van-button>
+</view>

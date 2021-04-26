@@ -1,0 +1,25 @@
+<!--pages/goods/all/all.wxml-->
+<view class="all">
+  <view class="menu">
+    <view wx:for="{{goodsList}}" class="{{curTileIndex==index? 'curTitle' : ''}}" bindtap="curChange"
+    wx:key="index"
+      data-index="{{index}}"
+      >{{index}}</view>
+  </view>
+  <view class="main" bindtouchstart="touchStart" bindtouchend="touchEnd">
+    <view wx:for="{{goodsList}}" wx:key="index" id="index{{index}}">
+      <text class="title"  >{{index}}菜品系列～</text>
+      <view class="item" wx:for="{{item}}" 
+      wx:key="index">
+        <view class="info">
+        <image src="{{item.pic}}"></image>
+        <text>{{item.name}} \n ¥{{item.minPrice}}</text>
+      </view>
+      <view class="num">
+        <text class="num-change" data-mode='+' data-item='{{item}}' bindtap="changeNum">+</text>
+        <text >{{item.bugNum}}</text>
+      </view>
+      </view>
+    </view>
+  </view>
+</view>

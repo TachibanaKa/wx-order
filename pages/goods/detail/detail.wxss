@@ -1,0 +1,34 @@
+.info text {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.num {
+  width: 100%;
+  padding: 15rpx;
+  padding-right: 50rpxrpx;
+  text-align: right;
+  margin: 15rpx 0 15rpx 0;
+}
+.num text {
+  display: inline-block;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+.num .num-change {
+  border: 1px solid red;
+
+}
+.num .price {
+  display: inline;
+  color:red;
+  margin-right: 14% 
+}
+.num .last {
+  margin-right: 175rpx;
+}
+.detail {
+  text-align: center;
+}

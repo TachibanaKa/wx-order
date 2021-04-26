@@ -1,0 +1,24 @@
+<view class="home">
+  <view class='banner'>
+    <swiper indicator-dots="{{true}}" autoplay="{{true}}">
+      <swiper-item wx:for="{{banner}}" wx:key="id">
+        <image src="{{item.picUrl}}"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class='info'>
+    <van-cell title="武汉江夏区" is-link value="地图" icon="location-o" bindtap="mapOpen" />
+    <van-cell title="营业时间" value="9:00-20:00" icon="clock-o" />
+    <van-cell title="联系电话" value="110" icon="phone-o" />
+  </view>
+  <view class="recommend">
+    <view class="title">店家推荐</view>
+    <view class="item" wx:for="{{goods}}" data-item="{{item}}" bindtap="toDetail" wx:key="id">
+      <image src="{{item.pic}}"></image>
+      <view>
+        <text>{{item.name}}</text>
+        <text> ¥{{item.originalPrice}}</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/cart/cart",
+    "pages/logs/logs",
+    "pages/goods/detail/detail",
+    "pages/goods/all/all"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#fff",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/goods/all/all",
+      "text": "菜单"
+    }, {
+      "pagePath": "pages/cart/cart",
+      "text": "购物车"
+    }]
+  },
+  "usingComponents": {
+    "van-button": "miniprogram_npm/vant-weapp/button/index",
+    "van-cell": "miniprogram_npm/vant-weapp/cell/index"
+  },
+  "permission":{
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于展示路程" 
+    }
+  }
+}

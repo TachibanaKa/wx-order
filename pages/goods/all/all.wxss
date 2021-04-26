@@ -1,0 +1,88 @@
+/* pages/goods/all/all.wxss */
+.all {
+  display: flex;
+}
+
+.menu {
+  width: 25%;
+  min-height: 100vh;
+  border-right: 1px solid #ccc;
+  position: fixed;
+  left: 0;
+  z-index: 100;
+}
+
+.menu view {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
+
+.main {
+  margin-left: 25%;
+  width: 75%;
+  min-height: 100vh;
+  float: right;
+}
+.main .title{
+  display: inline-block;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: red;
+  text-align: center;
+}
+.curTitle {
+  background-color: skyblue;
+}
+
+/* pages/cart/cart.wxss */
+.item {
+  width: 100%;
+  height: 200rpx;
+  padding: 20rpx;
+  background-color: #fafafa;
+  display: flex;
+  position: relative;
+}
+
+.item .info {
+  width: 70%;
+  height: 200rpx;
+}
+
+.item .info text {
+  display: inline-block;
+  margin-top: 5%;
+  margin-left: 15rpx;
+  vertical-align: top;
+  font-size: 30rpx;
+}
+
+.item .info image {
+  height: 100%;
+  width: 40%;
+}
+
+.item .num {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 60rpx;
+}
+
+.item .num text {
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  background-color: #fff;
+  line-height: 50rpx;
+  text-align: center;
+}
+
+.item .num .num-change {
+  border: 1px solid red;
+}
